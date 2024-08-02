@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -16,6 +16,8 @@
     "@nuxt/icon": "^1.4.4",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.3",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@prisma/nuxt": "^0.0.35",
     "@stefanobartoletti/nuxt-social-share": "^1.0.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
@@ -25,6 +27,8 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^3.4.2"
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@prisma/client": "^5.17.0",
+    "prisma": "^5.17.0"
   }
 }

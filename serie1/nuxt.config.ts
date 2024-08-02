@@ -23,8 +23,9 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-  css: ["~/assets/main.scss"],
+  css: ["~/assets/styles/main.scss"],
   security: {
+    csrf: true,
     headers: {
       crossOriginEmbedderPolicy:
         process.env.NODE_ENV === "development" ? "unsafe-none" : "require-corp",
@@ -40,5 +41,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@stefanobartoletti/nuxt-social-share",
     "@artmizu/nuxt-prometheus",
+    "@prisma/nuxt",
+    "@nuxtjs/tailwindcss",
   ],
 });
