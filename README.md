@@ -4,7 +4,7 @@ An app to keep records of projects/apps that I develop, suggestions are always w
 
 ## About
 
-Developer: **Kittipich "Luke" Aiumbhornsin**
+Developer: **Kittipich Aiumbhornsin**
 
 Development Status: **Active**
 

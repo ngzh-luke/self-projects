@@ -11,4 +11,4 @@ Created on August 2, 2024
 ## Serie 1 Changelog
 
 - Initial Create: Initial created on August 2, 2024 -> __0.0.0__
-- Initial Development:
+- Initial Setup: Initial setup the project on August 2, 2024 -> __0.0.1__

@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@artmizu/nuxt-prometheus": "^2.4.0",
+    "@dargmuesli/nuxt-cookie-control": "^8.4.6",
+    "@nuxt/icon": "^1.4.4",
+    "@nuxt/image": "^1.7.0",
+    "@nuxtjs/i18n": "^8.3.3",
+    "@stefanobartoletti/nuxt-social-share": "^1.0.0",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0",
+    "nuxt": "^3.12.4",
+    "nuxt-security": "^2.0.0-rc.9",
+    "sass": "^1.77.8",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.4.2"
+  }
+}
