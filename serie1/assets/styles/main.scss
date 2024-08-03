@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+// configure project's fonts
+// Th
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Bd/AlibabaSansThai-Bd.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Bd/AlibabaSansThai-Bd.woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Md/AlibabaSansThai-Md.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Md/AlibabaSansThai-Md.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Rg/AlibabaSansThai-Rg.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AlibabaSansThai";
+  src: url("../assets/fonts/AlibabaSansThai/AlibabaSansThai-Rg/AlibabaSansThai-Rg.woff");
+  font-weight: normal;
+}
+// Zh-En
+@font-face {
+  font-family: "AlimamaDongFangDakai";
+  src: url("../assets/fonts/AlimamaDongFangDaKai-Regular/AlimamaDongFangDaKai-Regular.woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "AlimamaDongFangDakai";
+  src: url("../assets/fonts/AlimamaDongFangDaKai-Regular/AlimamaDongFangDaKai-Regular.woff");
+  font-weight: normal;
+}
