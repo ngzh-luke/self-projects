@@ -13,7 +13,7 @@
   "dependencies": {
     "@artmizu/nuxt-prometheus": "^2.4.0",
     "@dargmuesli/nuxt-cookie-control": "^8.4.6",
-    "@nuxt/icon": "^1.4.4",
+    "@nuxt/icon": "^1.4.5",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
