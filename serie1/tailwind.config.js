@@ -148,6 +148,7 @@ export default {
       },
     },
     fontFamily: {
+      // https://www.alibabafonts.com/#/font & https://www.alibabafonts.com/#/more
       thai: ["AlibabaSansThai"],
       zh_en: ["AlimamaDongFangDakai"],
 

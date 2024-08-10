@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-app",
+  "name": "projects.lukecreated",
   "private": true,
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@artmizu/nuxt-prometheus": "^2.4.0",
     "@dargmuesli/nuxt-cookie-control": "^8.4.6",
-    "@nuxt/icon": "^1.4.4",
+    "@nuxt/icon": "latest",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.4.2",
-    "@prisma/client": "^5.17.0",
-    "prisma": "^5.17.0"
+    "@prisma/client": "^5.18.0",
+    "prisma": "^5.18.0"
   }
 }

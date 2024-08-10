@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -26,17 +26,49 @@ model Users {
 //   author    User    @relation(fields: [authorId], references: [id])
 //   authorId  Int
 // }
-
-model Platforms {
-  id Int    @id @default(autoincrement())
-  os String
+model Platform {
+  id            Int            @id @default(autoincrement())
+  os            String         @unique @db.VarChar(10)
+  projects      Project[]
+  distributions Distribution[]
 }
 
-model Tags {
-  id  Int    @id @default(autoincrement())
-  tag String
+model Project {
+  id            Int            @id @default(autoincrement())
+  title         String         @db.VarChar(56)
+  source        String         @db.VarChar(255)
+  short         String         @db.VarChar(255)
+  license       String         @db.VarChar(56)
+  version       String         @db.VarChar(20)
+  fk_tag        String         @db.VarChar(255)
+  fk_user       Int
+  platform_id   String         @db.VarChar(10)
+  platform      Platform       @relation(fields: [platform_id], references: [os])
+  user          User           @relation(fields: [fk_user], references: [id])
+  tags          Tag[]
+  distributions Distribution[]
 }
 
-model Projects {
-  id Int @id @default(autoincrement())
+model Tag {
+  id       Int       @id @default(autoincrement())
+  tag      String    @db.VarChar(100)
+  projects Project[]
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  display_name String    @db.VarChar(56)
+  username     String    @unique @db.VarChar(30)
+  password     String    @db.Text
+  role         String    @db.VarChar(25)
+  projects     Project[]
+}
+
+model Distribution {
+  id           Int      @id @default(autoincrement())
+  fk_platform  String   @db.VarChar(10)
+  link         String   @db.VarChar(255)
+  fk_projectId Int
+  platform     Platform @relation(fields: [fk_platform], references: [os])
+  project      Project  @relation(fields: [fk_projectId], references: [id])
 }
