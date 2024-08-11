@@ -15,3 +15,4 @@ Created on August 2, 2024
 - Initial Setup: Initial setup the project 2 on August 3, 2024 -> __0.0.2__
 - Initial Setup: Initial setup the project 3 on August 4, 2024 -> __0.0.3__
 - Initial Setup: Added theme colors, setup database related on August 10, 2024 -> __0.0.4__
+- Initial Setup: More backend endpoint structure implemented on August 11, 2024 -> __0.0.5__

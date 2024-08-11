@@ -1,4 +1,4 @@
-/// method: `get` | path: `/api/v1/check`
+/// method: `get` | path: `/check`
 
 export default defineEventHandler((event) => {
   const url = getRequestURL(event);
@@ -6,7 +6,6 @@ export default defineEventHandler((event) => {
     metaData: {
       status: "ok",
       path: url.pathname,
-      apiVersion: 1,
     },
   };
 });
