@@ -1,8 +1,12 @@
 <script setup lang="ts">
 const route = useRoute()
+definePageMeta({
+  layout: 'default'
+})
 </script>
 
 <template>
+  <NuxtLayout class=""></NuxtLayout>
   <div>
     <h1>Nuxt Routing set up successfully!</h1>
     <p>Current route: {{ route.path }}</p>
